@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "target": "es2017",
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitReturns": false,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "outDir": "./built",
+    "allowJs": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "types": [
+      "node",
+      "jest"
+    ],
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "noEmitOnError": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "src/types/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "**/*.spec.ts",
+    "**/*/public/**/*.js"
+  ],
+  "include": [
+    "./src/**/*"
+  ],
+  "files": [
+    "src/types/global.d.ts"
+  ]
+}

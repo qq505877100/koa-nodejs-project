@@ -3,8 +3,8 @@ const { ParamsErrorException } = require('../model/CatchException');
 
 const getBookInfo = async (ctx) => {
   const bookInfo = await BookService.getBookInfo();
-  await ctx.render('home/index', {bookName: bookInfo});
-  // throw new ParamsErrorException('自定义异常发生', 111);
+  // await ctx.render('home/index', {bookName: bookInfo});
+  throw new ParamsErrorException('自定义异常发生', 111);
 
   ctx.body = {
     name: bookInfo,
