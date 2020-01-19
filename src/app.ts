@@ -26,6 +26,7 @@ app.listen(3000, (port: number) => {
   console.log('listen 3000');
 });
 
+// dqdadadadasd
 function a(name: string) {
   let a = (age: number) => {
     const a = 1212;
